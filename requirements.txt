@@ -6,3 +6,6 @@ python-multipart==0.0.9
 itsdangerous==2.1.2
 pypdf==4.3.1
 python-docx==1.1.2
+
+# Load .env settings for the free local AI Agent configuration.
+python-dotenv==1.0.1
