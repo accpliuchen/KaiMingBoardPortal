@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
 from .database import init_db
+from .seed import seed_demo_data
 from .routers import agent, auth, documents, meetings, motions
 from .routers import agent_chatbot
 
@@ -22,3 +23,4 @@ app.include_router(agent_chatbot.router)
 @app.on_event("startup")
 def startup():
     init_db()
+    seed_demo_data()
