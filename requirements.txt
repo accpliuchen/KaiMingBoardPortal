@@ -1,0 +1,8 @@
+# Python 3.8+ compatible versions. These pins avoid newer releases that may
+# require Python 3.10+ on some machines.
+fastapi==0.110.3
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+itsdangerous==2.1.2
+pypdf==4.3.1
+python-docx==1.1.2
